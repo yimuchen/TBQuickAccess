@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Quick Access",
+  "description": "Quick access to chat clients that are not official supported by Thunderbird via their web interface",
+  "version": "0.1",
+  "author": "yimuchen",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@yimuchen.thunderbird.quickaccess",
+      "strict_min_version": "106.0"
+    }
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://*.whatsapp.com/*"
+  ],
+  "icons": {
+    "32": "thunder-icon.svg"
+  },
+  "background": {
+    "scripts": ["redirect.js"]
+  }
+}
