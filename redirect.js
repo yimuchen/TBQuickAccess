@@ -16,6 +16,12 @@ browser.spacesToolbar.addButton("Whatsapp", {
   url: "https://web.whatsapp.com/",
 });
 
+browser.spacesToolbar.addButton("Skype", {
+  title: "Skype",
+  defaultIcons: "skype.svg",
+  url: "https://web.skype.com/",
+});
+
 /* Addition settings to have Whatsapp recognize thunderbird browser */
 browser.webRequest.onBeforeSendHeaders.addListener(
   function (e) {
